@@ -70,11 +70,6 @@ python app.py
 
 2. Enter a stock ticker symbol when prompted
 
-3. Select analysis type:
-   - Comprehensive Analysis (1)
-   - Fundamental Analysis (2)
-   - Technical Analysis (3)
-
 4. Review the generated report
 
 ## 📁 Project Structure
@@ -87,7 +82,6 @@ stock-analysis-app/
 ├── agent_manager.py       # AI agent management
 ├── utils.py              # Utility functions
 ├── requirements.txt      # Project dependencies
-├── .env                 # Environment variables
 ├── config.py            # storing open ai key
 └── README.md            # Project documentation
 ```
@@ -160,25 +154,6 @@ Logs are stored in `app.log` and include:
 - Error messages
 - Performance metrics
 - Agent interactions
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [OpenAI](https://openai.com/) for GPT models
-- [yfinance](https://github.com/ranaroussi/yfinance) for stock data
-- [Rich](https://github.com/Textualize/rich) for terminal formatting
-- [AutoGen](https://github.com/microsoft/autogen) for agent framework
 
 ## ⚠️ Disclaimer
 
