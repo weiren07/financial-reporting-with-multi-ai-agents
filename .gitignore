@@ -2,3 +2,6 @@ config.py
 test.py
 __pycache__/
 venv/
+test2.py
+app.log
+.cache
