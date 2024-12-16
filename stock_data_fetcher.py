@@ -16,6 +16,7 @@ class StockDataFetcher:
         gain = (delta.where(delta > 0, 0)).rolling(window=periods).mean()
         loss = (-delta.where(delta < 0, 0)).rolling(window=periods).mean()
         rs = gain / loss
+        print(rs)
         return 100 - (100 / (1 + rs))
 
     def analyze_technical_indicators(self) -> Dict[str, Any]:
@@ -57,3 +58,9 @@ class StockDataFetcher:
         technical_indicators = self.analyze_technical_indicators()
         basic_info['technical_indicators'] = technical_indicators
         return basic_info
+
+if __name__ =="__main__":
+    amd_fetcher = StockDataFetcher("AMD")
+    
+    # Fetch all data
+    print(amd_fetcher.analyze_technical_indicators())

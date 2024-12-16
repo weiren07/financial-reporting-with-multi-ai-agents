@@ -5,3 +5,4 @@ venv/
 test2.py
 app.log
 .cache
+test1.py
