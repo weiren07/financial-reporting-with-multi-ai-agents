@@ -4,7 +4,8 @@ from stock_analyzer import StockAnalyzer
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.panel import Panel
-
+import datetime
+import os
 class StockAnalysisApp:
     def __init__(self):
         self.agent_manager = AgentManager()
@@ -23,7 +24,13 @@ class StockAnalysisApp:
         self.console.print(Panel(markdown_report, title="[bold yellow]Stock Analysis Report[/bold yellow]", border_style="cyan"))
 
         self.console.print("=====================", style="bold blue")
-
+        output_dir = "reports"
+        os.makedirs(output_dir,exist_ok = True)#ensure the dictionary exist
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        output_file = os.path.join(output_dir, f"{ticker}_stock_report_{timestamp}.md")
+        with open(output_file, "w", encoding="utf-8") as f:
+                f.write(report)
+        self.console.print(f"\n[bold blue]Report saved to:[/bold blue] {output_file}")
 if __name__ == "__main__":
     from utils import logger  # Ensure logger is imported for logging
     try:
