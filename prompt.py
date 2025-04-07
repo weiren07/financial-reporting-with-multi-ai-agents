@@ -1,3 +1,4 @@
+#prompt.py
 UserProxyAgent_prompt = """
 # CONTEXT #
 You are a human user proxy specializing in stock analysis.
