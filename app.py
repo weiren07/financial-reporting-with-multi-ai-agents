@@ -3,8 +3,8 @@
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.panel import Panel
-from analysis_core import run_stock_analysis
-from utils import logger 
+from src.analysis_core import run_stock_analysis
+from src.utils import logger 
 class StockAnalysisApp:
     def __init__(self):
         self.console = Console()

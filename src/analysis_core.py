@@ -1,7 +1,7 @@
 import datetime
 import os
-from agent_manager import AgentManager
-from stock_analyzer import StockAnalyzer
+from src.agent_manager import AgentManager
+from src.stock_analyzer import StockAnalyzer
 
 def run_stock_analysis(ticker:str)->tuple[str, str]:
     """

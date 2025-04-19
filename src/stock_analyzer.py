@@ -1,9 +1,9 @@
 # stock_analyzer.py
 import autogen
 from typing import Dict, Any
-from agent_manager import AgentManager
-from stock_data_fetcher import StockDataFetcher
-from utils import logger  # Assuming you've set up logging as previously suggested
+from src.agent_manager import AgentManager
+from src.stock_data_fetcher import StockDataFetcher
+from src.utils import logger  # Assuming you've set up logging as previously suggested
 
 class StockAnalyzer:
     def __init__(self, agent_manager: AgentManager):

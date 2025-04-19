@@ -2,3 +2,4 @@ yfinance==0.2.49
 openai==1.54.4
 autogen
 rich
+streamlit

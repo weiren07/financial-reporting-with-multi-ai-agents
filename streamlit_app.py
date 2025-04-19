@@ -1,5 +1,5 @@
 import streamlit as st
-from analysis_core import run_stock_analysis
+from src.analysis_core import run_stock_analysis
 
 st.set_page_config(page_title="Stock Analysis Report",layout="wide")
 st.title("📈 Stock Analysis Report")

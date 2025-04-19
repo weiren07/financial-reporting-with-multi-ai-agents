@@ -1,8 +1,8 @@
 # agent_manager.py
 from autogen import AssistantAgent, UserProxyAgent
 from typing import Dict, Any
-from utils import get_config_list
-import prompt
+from src.utils import get_config_list
+import src.prompt as prompt
 class AgentManager:
     def __init__(self):
         self.config_list = get_config_list()
